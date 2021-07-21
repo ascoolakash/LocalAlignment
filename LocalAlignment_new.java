@@ -17,29 +17,21 @@ public class LocalAlignment {
 	  } 
 	  
 	  public static void main(String[] ar) throws Exception 
-	  { 
-		  
-	    	String String1 = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGCTTCTGAACTGGTTACCTGCCGTGAGTAAATTAAAATTTTATTGACTTAGGTCACTAAATACTTTAACCAATATAGGCATAGCGCACAGACAGATAAAAATTACAGAGTACACAACATCCATGAAACGCATTAGCACCACCATTACCACCACCATCA";
-	    	System.out.println(String1);
-	          
-	    	String String2="CGTGAGTCAGCTATTGAACTGGCCGCGCAATGGAAGAGTTGTTAATCCGCAAAATCTGGCAAC";
-	    	System.out.println(String2);
-	    
-		String k;
-		//k = JOptionPane.showInputDialog("Enter number of top highest score: ");
-		//System.out.println(k);
-		//int k1=Integer.parseInt(k);
-		int k1=10;
-		//String Match;
-		//Match =  JOptionPane.showInputDialog("Matching Character score : ");
-		
-		//int match = Integer.parseInt(Match);
-		int match=20;
-		//String Gap ;
-		//Gap =  JOptionPane.showInputDialog("Gap Character score : ");
-		//int gap = Integer.parseInt(Gap);
-		int gap=-30;
-		getScore(String2, String1, match, gap,k1); 
+	  { 			    
+	    /* Enter the subject:*/
+	    String String1 = "MEEITQIKKRLSQTVRLEGKEDLLSKKDSITNLKTEEHVSVKKMVISEPKPEKKEDIQLKKKEVVAVAKKEEVLKKEVVVPSKKDEEILPLKKEVPRPPK";
+	    System.out.println(String1);
+	    /* Enter the query:*/      
+	    String String2="TCCGCAAAATCTGGCAAC";
+	    System.out.println(String2);
+	    String k;
+	    /* Enter number of top highest score:*/
+	    int k1=20;
+	    /* Matching Character score :  */
+	    int match=20;
+	    /* Gap Character score : */
+	    int gap=-30;
+	    getScore(String2, String1, match, gap,k1); 
 	  } 
 	
 	static void getScore(String String1, String String2, int reward, int penalitString2,int userInput) 
